@@ -16,3 +16,5 @@
         name: httpd
         state: restarted
 
+#Example Run:
+#ansible-navigator run apache-setup.yml --eei ee-supported-rhel8:latest -pp missing -m stdout
