@@ -16,4 +16,4 @@
       tags: [never, beta]
 
 #Example run:
-#ansible-navigator run tags.yml -t alpha/beta --eei ee-supported-rhel8:latest --pp missing -m stdout
+#ansible-navigator run tags.yml -t "alpha,beta" --eei ee-supported-rhel8:latest --pp missing -m stdout
