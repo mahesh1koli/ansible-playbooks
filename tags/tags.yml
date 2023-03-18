@@ -1,0 +1,19 @@
+---
+- name: add tags to tasks
+  hosts: all
+  become: true
+  tasks:
+    - name: first tag task
+      ansible.builtin.copy:
+        content: "que, sara sara"
+        dest: /var/www/html/index.html
+      tags: [never, alpha]
+
+    - name: second tag task
+      ansible.builtin.copy:
+        content: "Whatever will be"
+        dest: /var/www/html/index.html
+      tags: [never, beta]
+
+#Example run:
+#ansible-navigator run tags.yml -t alpha/beta --eei ee-supported-rhel8:latest --pp missing -m stdout
