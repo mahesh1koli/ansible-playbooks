@@ -1,0 +1,22 @@
+---
+users:
+  - name: bobby
+    first: john
+    middle: michael
+    last: bobby
+    uid: 1003
+  
+  - name: smith
+    first: steven
+    middle: franklin
+    last: smith
+    uid: 1007
+
+  - name: warner
+    first: david
+    middle: simon
+    last: warner
+    uid: 1009
+
+
+    
